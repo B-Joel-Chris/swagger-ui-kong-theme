@@ -1,0 +1,49 @@
+:host {
+  --spec-info-border-color: var(--section_colors-stroke, rgba(0, 0, 0, 0.1));
+  --spec-info-margin: var(--spacing-xl, 1.5rem) 0;
+  --spec-info-padding: var(--spacing-xl);
+  --spec-info-background-color: var(--section_colors-body, #fff);
+  --spec-info-title-font-size: var(--type-xl);
+  --spec-info-title-font-weight: 300;
+  --spec-info-title-color: var(--text-color);
+}
+
+.spec-detail-section {
+  background: var(--spec-info-background-color);
+}
+
+.main {
+  margin: 0 0 1.25rem 0;
+}
+
+.title-wrapper {
+  align-items: center;
+  display: flex;
+  margin: 0 0 1rem;
+}
+
+.title-wrapper small {
+  font-size: 0.875rem;
+  font-weight: 300;
+  display: inline-block;
+  margin: 0 0 0 var(--spacing-xs);
+  padding: 4px;
+  vertical-align: super;
+  border-radius: 1rem;
+  background: #7d8492;
+}
+
+.title-wrapper small > pre {
+  margin: 0;
+  padding: 0;
+  font-family: var(--swagger-ui-font-family);
+  color: #fff;
+}
+
+.title {
+  font-size: var(--type-xl);
+  font-weight: var(--spec-info-title-font-weight);
+  padding: 0;
+  margin: unset;
+  color: var(--spec-info-title-color);
+}

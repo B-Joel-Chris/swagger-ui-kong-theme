@@ -1,0 +1,69 @@
+.servers {
+  color: var(--text_colors-primary, var(--black-70, rgba(0, 0, 0, 0.7)));
+  
+  > label {
+    font-size: 12px;
+
+    @include text_headline();
+
+    select {
+      min-width: 130px;
+      padding: 10px var(--spacing-lg) 10px var(--spacing-md);
+      color: var(--black-70, rgba(0, 0, 0, 0.7));
+      max-width: calc(100% - 6px);
+      text-overflow: ellipsis;
+    }
+  }
+
+  > div {
+    h4 {
+      margin: var(--spacing-sm, 12px) 0;
+    }
+  }
+
+  h4.message {
+    padding-bottom: 2em;
+  }
+
+  table {
+    tr {
+      width: 30em;
+    }
+
+    td {
+      display: inline-block;
+      max-width: 15em;
+      vertical-align: middle;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &:first-of-type {
+        padding-right: 1em;
+      }
+
+      input {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .computed-url {
+    margin: var(--spacing-sm, 12px) 0;
+
+    code {
+      display: inline-block;
+      overflow-wrap: anywhere;
+      padding: 4px;
+      font-size: 14px;
+      margin: 0 1em;
+    }
+  }
+}
+
+.operation-servers {
+  h4.message {
+    margin-bottom: 2em;
+  }
+}
